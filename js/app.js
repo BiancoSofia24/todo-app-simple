@@ -16,7 +16,6 @@ const CrearTareas = (tarea) => {
 
 // Guardar en el Local Storage
 const GuardarDB = () => {
-  // El primer parametro es la carpeta en la que se almancenaran los elem de arrayTareas (debe ser transformado a JSON)
   localStorage.setItem('tareas', JSON.stringify(arrayTareas));
 
   MostrarDB();
@@ -96,8 +95,7 @@ document.addEventListener('DOMContentLoaded', MostrarDB);
 listaTareasUI.addEventListener('click', (e) => {
   e.preventDefault();
 
-  // IMPORTANTE
-  // e.path no está disponible para Firefox
+  // IMPORTANTE: event.path no está disponible para Firefox
 
   if (e.target.id === 'btn-check' || e.target.id === 'btn-eliminar') {
     const tarea = e.path[2].childNodes[1].innerHTML;
