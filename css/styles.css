@@ -1,0 +1,180 @@
+:root {
+   --verde: #5dc95d;
+   --verde-claro: #d5eed5;
+   --verde-hover: #3c8d3c;
+   --turquesa: #138ba0;
+   --turquesa-claro: #d1ecf1;
+   --turquesa-hover: #0c5460;
+   --rojo: #ce4949;
+   --rojo-hover: #b84242;
+   --gris: #ddd;
+   --plomo: #222;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Nunito, sans-serif;
+   font-size: 16px;
+}
+
+.contenedor {
+   width: 80%;
+   margin: 50px auto 30px auto;
+   box-shadow: 2px 2px 5px var(--gris);
+   border-radius: 5px;
+   background: #fff;
+}
+
+   .header {
+      text-align: center;
+      padding-top: 10px;
+   }
+   
+   .header-icon {
+      color: var(--turquesa);
+   }
+
+   .leyenda {
+      display: flex;
+      flex-direction: row;
+   }
+   
+   .leyenda-incomp, .leyenda-completa {
+      width: 150px;
+      height: 25px;
+      padding: 8px;
+      margin: 10px auto;
+      text-align: center;
+      border-radius: 5px;
+   }
+
+   .leyenda-incomp {
+      background: var(--turquesa-claro);
+      border: 1px solid var(--turquesa-claro);
+      color: var(--turquesa);
+      font-weight: 700;
+   }
+   
+   .leyenda-completa {
+      background: var(--verde-claro);
+      border: 1px solid var(--verde-claro);
+      color: var(--verde);
+      font-weight: 700;
+   }
+   
+   .form {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 20px;
+   }
+   
+   .input-tareas {
+      width: 80%;
+      margin: auto;
+      font-family: Nunito, sans-serif;
+      padding: 9px 10px;
+      border: 1px solid var(--gris);
+      border-radius: 5px;
+   }
+   
+      .input-tareas:focus {
+         border: 2px solid var(--turquesa);
+         box-shadow: 1px 1px 3px var(--gris);
+      }
+
+      .input-tareas::placeholder {
+         color: #888;
+      }
+
+   .btn {
+      display: inline;
+      background: var(--verde);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+      padding: 8px;
+      margin: 20px 0 10px 9%;
+      cursor: pointer;
+      text-align: center;
+      font-family: Nunito;
+      font-size: 16px;
+   }
+
+      .btn:hover {
+         background: var(--verde-hover);
+         box-shadow: 1px 1px 5px var(--gris);
+      }
+
+   .lista-tareas {
+      background: var(--turquesa-claro);
+      color: var(--turquesa-hover);
+      width: 79%;
+      border: 1px solid var(--turquesa-claro);
+      border-radius: 5px;
+      margin: 10px auto;
+      padding: 10px 15px;
+   }
+
+      .lista-tareas:hover {
+         box-shadow: 1px 1px 3px var(--gris);
+      }
+
+      .lista-check {
+         background: var(--verde-claro);
+         color: var(--verde-hover);
+         border: 1px solid var(--verde-claro);
+      }
+
+      .escondido {
+         display: none;
+      }
+
+      .tareas-icon {
+         float: right;
+         cursor: pointer;
+         color: var(--turquesa);
+         font-size: 18px;
+         margin-top: 2px;
+         margin-left: 10px;
+      }
+
+         .tareas-icon:hover {
+            color: var(--turquesa-hover);
+         }
+
+      .tarea-check {
+         color: var(--verde);
+      }
+
+         .tarea-check:hover {
+            color: var(--verde-hover);
+         }
+
+   .footer {
+      background: #eee;
+      margin-top: 20px;
+      padding: 15px;
+      text-align: center;
+   }
+
+      .footer .link {
+         text-decoration: none;
+         color: var(--turquesa);
+      }
+
+         .footer .link:hover {
+            color: var(--turquesa-hover);
+         }
+
+      .emoji {
+         font-size: 18px;
+         color: #DD2E44;
+      }
+
+
+
+
+    
+
