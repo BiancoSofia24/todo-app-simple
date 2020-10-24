@@ -1,0 +1,198 @@
+/* Global var */
+:root {
+   --verde: #5dc95d;
+   --verde-claro: #d5eed5;
+   --verde-hover: #3c8d3c;
+   --turquesa: #138ba0;
+   --turquesa-claro: #d1ecf1;
+   --turquesa-hover: #0c5460;
+   --rojo: #ce4949;
+   --rojo-hover: #b84242;
+   --gris: #ddd;
+   --plomo: #222;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Nunito, sans-serif;
+   font-size: 16px;
+}
+
+.container {
+   width: 80%;
+   margin: 50px auto 30px auto;
+   box-shadow: 2px 2px 5px var(--gris);
+   border-radius: 5px;
+   background: #fff;
+}
+
+   /* Header */
+   .header {
+      text-align: center;
+      padding-top: 10px;
+   }
+   
+   .header-icon {
+      color: var(--turquesa);
+   }
+
+   .leyend {
+      display: flex;
+      flex-direction: row;
+   }
+   
+   .leyend-incomp, .leyend-complete {
+      width: 125px;
+      height: 25px;
+      padding: 7px;
+      margin: 10px auto;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 5px;
+   }
+
+   .leyend-incomp {
+      background: var(--turquesa-claro);
+      border: 1px solid var(--turquesa-claro);
+      color: var(--turquesa);
+      font-weight: 700;
+   }
+   
+   .leyend-complete {
+      background: var(--verde-claro);
+      border: 1px solid var(--verde-claro);
+      color: var(--verde);
+      font-weight: 700;
+   }
+   /* Header end */
+   
+   /* Form */
+   .form {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 20px;
+   }
+   
+   .task-input {
+      width: 80%;
+      margin: auto;
+      font-family: Nunito, sans-serif;
+      padding: 9px 10px;
+      border: 1px solid var(--gris);
+      border-radius: 5px;
+   }
+   
+      .task-input:focus {
+         border: 2px solid var(--turquesa);
+         box-shadow: 1px 1px 3px var(--gris);
+      }
+
+      .task-input::placeholder {
+         color: #888;
+      }
+
+   .btn {
+      display: inline;
+      background: var(--verde);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+      padding: 8px;
+      margin: 20px 0 10px 9%;
+      cursor: pointer;
+      text-align: center;
+      font-family: Nunito;
+      font-size: 16px;
+   }
+
+      .btn:hover {
+         background: var(--verde-hover);
+         box-shadow: 1px 1px 5px var(--gris);
+      }
+   /* Form end */
+
+   /* Task section */
+   .task-list {
+      background: var(--turquesa-claro);
+      color: var(--turquesa-hover);
+      width: 79%;
+      border: 1px solid var(--turquesa-claro);
+      border-radius: 5px;
+      margin: 10px auto;
+      padding: 10px 15px;
+   }
+
+      .task-list:hover {
+         box-shadow: 1px 1px 3px var(--gris);
+      }
+
+      .check-list {
+         background: var(--verde-claro);
+         color: var(--verde-hover);
+         border: 1px solid var(--verde-claro);
+      }
+
+      .hidden {
+         display: none;
+      }
+
+      .task-icon {
+         float: right;
+         cursor: pointer;
+         color: var(--turquesa);
+         font-size: 18px;
+         margin-top: 2px;
+         margin-left: 10px;
+      }
+
+         .task-icon:hover {
+            color: var(--turquesa-hover);
+         }
+
+      .check-task {
+         color: var(--verde);
+      }
+
+         .check-task:hover {
+            color: var(--verde-hover);
+         }
+
+      .task-check {
+         color: var(--verde);
+      }
+
+         .task-check:hover {
+            color: var(--verde-hover);
+         }
+   /* Fin task section */
+   
+   /* Footer */
+   .footer {
+      background: #eee;
+      margin-top: 20px;
+      padding: 15px;
+      text-align: center;
+   }
+
+      .footer .link {
+         text-decoration: none;
+         color: var(--turquesa);
+      }
+
+         .footer .link:hover {
+            color: var(--turquesa-hover);
+         }
+
+      .emoji {
+         font-size: 18px;
+         color: #DD2E44;
+      }
+   /* Footer end */
+
+
+
+
+    
+

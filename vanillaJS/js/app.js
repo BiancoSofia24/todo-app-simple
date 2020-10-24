@@ -73,7 +73,6 @@ const EditDB = (task) => {
   let idArray = taskArray.findIndex((elem) => {
     return (elem.task === task);
   });
-  console.log(taskArray[idArray])
 
   taskArray[idArray].state = true;
   SaveDB();

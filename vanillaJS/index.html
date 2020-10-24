@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CRUD con Vue.js</title>
+   <!-- Font Awesome Icons -->
+   <script src="https://kit.fontawesome.com/e2fbfca351.js" crossorigin="anonymous"></script>
+   <!-- Google Fonts - Nunito -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Raleway&display=swap"
+      rel="stylesheet">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+   <main class="container">
+      <!-- Cabecera -->
+      <header class="header">
+         <h1>
+            <i class="fas fa-tasks header-icon"></i>
+            Mis Tareitas 🍨 
+         </h1>
+
+         <div class="leyend">
+            <div class="leyend-incomp">Tarea por hacer</div>
+            <div class="leyend-complete">Tarea completada</div>
+         </div>
+      </header>
+
+      <!-- Formulario de tareas -->
+      <form id="task-form" class="form">
+         <input type="text" id="task-input" class="task-input" placeholder="Aprender Vue.js" />
+         <button type="submit" class="btn">
+            <i class="fas fa-bookmark"></i>
+            Guardar
+         </button>
+      </form>
+
+      <!-- Lista de tareas -->
+      <section id="task-section">
+         <div class="task-list">
+            <b>Tarea</b><span class="hidden"> Estado</span>
+            <i class=" fas fa-trash-alt task-icon" id="delete-btn"></i>
+            <i class="far fa-check-circle task-icon" id="check-btn"></i>
+         </div>
+      </section>
+
+      <!-- Pie de página -->
+      <footer class="footer">
+         <p>
+            Created with
+            <span class="emoji">❤️</span> by
+            <a href="https://github.com/BiancoSofia24" target="_blank" class="link">Sofia Bianco</a>
+            2020
+         </p>
+      </footer>
+   </main>
+
+   <!-- Custom JS -->
+   <script src="./js/app.js"></script>
+</body>
+
+</html>
