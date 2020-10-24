@@ -1,3 +1,4 @@
+/* Global var */
 :root {
    --verde: #5dc95d;
    --verde-claro: #d5eed5;
@@ -18,7 +19,7 @@ body {
    font-size: 16px;
 }
 
-.contenedor {
+.container {
    width: 80%;
    margin: 50px auto 30px auto;
    box-shadow: 2px 2px 5px var(--gris);
@@ -26,6 +27,7 @@ body {
    background: #fff;
 }
 
+   /* Header */
    .header {
       text-align: center;
       padding-top: 10px;
@@ -35,41 +37,43 @@ body {
       color: var(--turquesa);
    }
 
-   .leyenda {
+   .leyend {
       display: flex;
       flex-direction: row;
    }
    
-   .leyenda-incomp, .leyenda-completa {
+   .leyend-incomp, .leyend-complete {
       width: 150px;
       height: 25px;
-      padding: 8px;
+      padding: 7px;
       margin: 10px auto;
       text-align: center;
       border-radius: 5px;
    }
 
-   .leyenda-incomp {
+   .leyend-incomp {
       background: var(--turquesa-claro);
       border: 1px solid var(--turquesa-claro);
       color: var(--turquesa);
       font-weight: 700;
    }
    
-   .leyenda-completa {
+   .leyend-complete {
       background: var(--verde-claro);
       border: 1px solid var(--verde-claro);
       color: var(--verde);
       font-weight: 700;
    }
+   /* Header end */
    
+   /* Form */
    .form {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       margin-top: 20px;
    }
    
-   .input-tareas {
+   .task-input {
       width: 80%;
       margin: auto;
       font-family: Nunito, sans-serif;
@@ -78,12 +82,12 @@ body {
       border-radius: 5px;
    }
    
-      .input-tareas:focus {
+      .task-input:focus {
          border: 2px solid var(--turquesa);
          box-shadow: 1px 1px 3px var(--gris);
       }
 
-      .input-tareas::placeholder {
+      .task-input::placeholder {
          color: #888;
       }
 
@@ -106,8 +110,10 @@ body {
          background: var(--verde-hover);
          box-shadow: 1px 1px 5px var(--gris);
       }
+   /* Form end */
 
-   .lista-tareas {
+   /* Task section */
+   .task-list {
       background: var(--turquesa-claro);
       color: var(--turquesa-hover);
       width: 79%;
@@ -117,21 +123,21 @@ body {
       padding: 10px 15px;
    }
 
-      .lista-tareas:hover {
+      .task-list:hover {
          box-shadow: 1px 1px 3px var(--gris);
       }
 
-      .lista-check {
+      .check-list {
          background: var(--verde-claro);
          color: var(--verde-hover);
          border: 1px solid var(--verde-claro);
       }
 
-      .escondido {
+      .hidden {
          display: none;
       }
 
-      .tareas-icon {
+      .task-icon {
          float: right;
          cursor: pointer;
          color: var(--turquesa);
@@ -140,18 +146,20 @@ body {
          margin-left: 10px;
       }
 
-         .tareas-icon:hover {
+         .task-icon:hover {
             color: var(--turquesa-hover);
          }
 
-      .tarea-check {
+      .check-task {
          color: var(--verde);
       }
 
-         .tarea-check:hover {
+         .check-task:hover {
             color: var(--verde-hover);
          }
-
+   /* Fin task section */
+   
+   /* Footer */
    .footer {
       background: #eee;
       margin-top: 20px;
@@ -172,6 +180,7 @@ body {
          font-size: 18px;
          color: #DD2E44;
       }
+   /* Footer end */
 
 
 

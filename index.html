@@ -16,23 +16,23 @@
 
 <body>
 
-   <main class="contenedor">
+   <main class="container">
       <!-- Cabecera -->
       <header class="header">
          <h1>
             <i class="fas fa-tasks header-icon"></i>
             Mis Tareitas
          </h1>
+
+         <div class="leyend">
+            <div class="leyend-incomp">Tarea por hacer</div>
+            <div class="leyend-complete">Tarea completada</div>
+         </div>
       </header>
 
-      <div class="leyenda">
-         <div class="leyenda-incomp">Tarea por hacer</div>
-         <div class="leyenda-completa">Tarea completada</div>
-      </div>
-
       <!-- Formulario de tareas -->
-      <form id="form-tareas" class="form">
-         <input type="text" id="tareas" class="input-tareas" placeholder="Aprender Vue.js" />
+      <form id="task-form" class="form">
+         <input type="text" id="task-input" class="task-input" placeholder="Aprender Vue.js" />
          <button type="submit" class="btn">
             <i class="fas fa-bookmark"></i>
             Guardar
@@ -40,11 +40,11 @@
       </form>
 
       <!-- Lista de tareas -->
-      <section id="lista-tareas">
-         <div class="lista-tareas">
-            <b>Tarea</b><span class="escondido"> Estado</span>
-            <i class=" fas fa-trash-alt tareas-icon" id="btn-eliminar"></i>
-            <i class="far fa-check-circle tareas-icon" id="btn-check"></i>
+      <section id="task-section">
+         <div class="task-list">
+            <b>Tarea</b><span class="hidden"> Estado</span>
+            <i class=" fas fa-trash-alt task-icon" id="delete-btn"></i>
+            <i class="far fa-check-circle task-icon" id="check-btn"></i>
          </div>
       </section>
 
